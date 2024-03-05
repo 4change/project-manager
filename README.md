@@ -1,5 +1,10 @@
 # project-manager
 ## 运行
+### 1.安装 MongoDB
+```shell
+docker run -d -p 27017:27017 --name my-mongo-container mongo
+```
+### 2. 运行
 ```shell
 cd project-manager
 
