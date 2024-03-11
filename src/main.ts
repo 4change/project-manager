@@ -27,5 +27,5 @@ const bootstrap = async() => {
 }
 
 bootstrap().then(() => {
-  logger.log(`listen in http://localhost:${listenPort}`);
+  logger.log(`listen in http://localhost:${listenPort}/api`);
 });
