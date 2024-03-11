@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { UserService } from './user.service';
-import { User } from './user.interface';
+import { User } from '../../interfaces/user.interface';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 
 @ApiTags("用户模块")
@@ -9,7 +9,7 @@ export class UserController {
     constructor(
         private userService: UserService
     ) { }
-    
+
     @ApiOperation({
         summary: "用户进行注册"
     })

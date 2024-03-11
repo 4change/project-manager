@@ -8,6 +8,6 @@ import { HashPasswordMiddleware } from 'src/middleware/hash-password.middleware'
 })
 export class UserModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(HashPasswordMiddleware).forRoutes('user')
+    consumer.apply(HashPasswordMiddleware).forRoutes('user/regist')
   }
 }

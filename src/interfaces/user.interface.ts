@@ -18,4 +18,7 @@ export class User extends Document {
     })
     readonly password: string;
 
+    @Prop()
+    readonly salt ?: string;
+
 }
