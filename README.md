@@ -11,12 +11,14 @@ cd project-manager
 # 切换 node 版本到 v16.20.0
 nvm use v16.20.0
 
-npm install yarn -g
-
-npm install -g @nestjs/cli
+# 安装 yarn
+npm install -g yarn
 
 # 安装依赖
-npm install
+yarn
+
+# 安装 nest
+npm install -g @nestjs/cli
 
 # 启动项目
 nest start
